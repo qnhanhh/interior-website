@@ -6,6 +6,6 @@ export const serifFont = DM_Serif_Display({
 })
 
 export const jostFont = Jost({
-    weight: '400',
+    weight: ['400','600'],
     subsets: ['latin']
 })
