@@ -1,12 +1,7 @@
 import Image from "next/image";
-import { Jost } from "next/font/google";
+import { jostFont } from "@/utils/fonts";
 import logo from "@/assets/logo.svg";
 import search from "@/assets/search.svg";
-
-const jost = Jost({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 export default function Header() {
   return (
@@ -16,13 +11,13 @@ export default function Header() {
         <p className="text-[4rem]">Interno</p>
       </div>
       <div className="flex gap-[3rem] pt-3">
-        <div className={`medium-para ${jost.className}`}>Home</div>
-        <div className={`medium-para ${jost.className}`}>Pages</div>
-        <div className={`medium-para ${jost.className}`}>Services</div>
-        <div className={`medium-para ${jost.className}`}>Project</div>
-        <div className={`medium-para ${jost.className}`}>Blog</div>
-        <div className={`medium-para ${jost.className}`}>Contact</div>
-        <div className={`medium-para ${jost.className}`}>
+        <div className={`medium-para ${jostFont.className}`}>Home</div>
+        <div className={`medium-para ${jostFont.className}`}>Pages</div>
+        <div className={`medium-para ${jostFont.className}`}>Services</div>
+        <div className={`medium-para ${jostFont.className}`}>Project</div>
+        <div className={`medium-para ${jostFont.className}`}>Blog</div>
+        <div className={`medium-para ${jostFont.className}`}>Contact</div>
+        <div className={`medium-para ${jostFont.className}`}>
           <Image src={search} alt="searchIcon" />
         </div>
       </div>
