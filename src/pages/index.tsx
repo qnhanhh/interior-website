@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import Work from "@/components/Work";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Header />
         <Banner />
         <Work />
+        <About />
       </main>
     </>
   );
