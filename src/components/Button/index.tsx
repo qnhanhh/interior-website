@@ -5,11 +5,17 @@ import { jostFont } from "@/utils/fonts";
 
 type buttonType = {
   content: string;
+  type: string;
 };
 
-export default function Button({ content }: buttonType) {
+export const ButtonTypes={
+  Default: 'default',
+  Plain: 'plain'
+}
+
+export default function Button({ content, type }: buttonType) {
   return (
-    <button className={styles.button}>
+    <button className={`${styles[type]}`}>
       <span className={`small-para font-semibold text-white ${jostFont.className}`}>
         {content}
       </span>

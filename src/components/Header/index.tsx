@@ -5,7 +5,7 @@ import search from "@/assets/search.svg";
 
 export default function Header() {
   return (
-    <div className="flex items-center justify-between mb-[5.7rem] pt-[4.4rem] w-full">
+    <div className="flex items-center justify-between mb-[5.7rem] mt-[4.4rem] w-full">
       <div className="flex gap-[1rem]">
         <Image src={logo} alt="logoImage" />
         <p className="text-[4rem]">Interno</p>
