@@ -10,7 +10,7 @@ export default function About() {
     <div className="flex items-center gap-[7.5rem]">
       <div className="w-[48rem]">
         <h1>We Create The Art Of Stylish Living Stylishly</h1>
-        <p className={`large-para ${jostFont.className}`}>
+        <p className={`large-para  mt-[3.3rem] ${jostFont.className}`}>
           It is a long established fact that a reader will be distracted by the
           of readable content of a page when lookings at its layouts the points
           of using that it has a more-or-less normal.
