@@ -5,6 +5,7 @@ import Banner from "@/components/Banner";
 import Work from "@/components/Work";
 import About from "@/components/About";
 import Testimonial from "@/components/Testimonial";
+import ClientLogo from "@/components/ClientLogo";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Work />
         <About />
         <Testimonial />
+        <ClientLogo />
       </main>
     </>
   );
