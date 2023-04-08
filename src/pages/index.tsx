@@ -8,6 +8,7 @@ import Testimonial from "@/components/Testimonial";
 import ClientLogo from "@/components/ClientLogo";
 import Project from "@/components/Project";
 import Counter from "@/components/Counter";
+import Blog from "@/components/Blog";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <ClientLogo />
         <Project />
         <Counter />
+        <Blog />
       </main>
     </>
   );
