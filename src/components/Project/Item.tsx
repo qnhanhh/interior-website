@@ -1,7 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { jostFont } from "@/utils/fonts";
 import rightVector from "@/assets/rightVector.svg";
-import styles from "./Project.module.css";
 
 type itemType = {
   src: StaticImageData;
@@ -19,7 +18,7 @@ export default function Item({ src, corner }: itemType) {
             Decor / Architecture
           </p>
         </div>
-        <div className={styles.vectorContainer}>
+        <div className="bg-[var(--primary-3)] w-28 h-28 rounded-full flex items-center justify-center">
           <Image src={rightVector} alt="" />
         </div>
       </div>

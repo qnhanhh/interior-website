@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Testimonial from "@/components/Testimonial";
 import ClientLogo from "@/components/ClientLogo";
 import Project from "@/components/Project";
+import Counter from "@/components/Counter";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Testimonial />
         <ClientLogo />
         <Project />
+        <Counter />
       </main>
     </>
   );

@@ -1,5 +1,4 @@
 import Item from "./Item";
-import styles from "./Testimonial.module.css";
 
 const userData = [
   {
@@ -24,7 +23,7 @@ const userData = [
 
 export default function Testimonial() {
   return (
-    <div className={styles.container}>
+    <div className="bg-[var(--primary-3)] w-full flex flex-col items-center rounded-[7rem] p-[8.8rem]">
       <h1 className="w-[55rem] mb-[3.8rem] text-center">
         What the People Thinks About Us
       </h1>
