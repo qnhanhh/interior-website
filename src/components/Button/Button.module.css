@@ -6,11 +6,26 @@
   border-radius: 18px;
   background: var(--primary-2);
   box-shadow: 0px 10px 20px rgba(192, 192, 192, 0.35);
+  stroke: var(--primary-1);
 }
+
 .plain {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin: auto;
   margin-top: 5.2rem;
+  stroke: var(--primary-1);
+}
+
+.inverted{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 26px 49px 26px 48px;
+  border-radius: 18px;
+  background: var(--primary-1);
+  color: white;
+  box-shadow: 0px 10px 20px #1F2022;
+  stroke: var(--primary-2);
 }
