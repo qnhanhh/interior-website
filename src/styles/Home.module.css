@@ -1,8 +1,8 @@
 .main {
-  background-color: red;
-  /* width: 65vw; */
+  width: 80vw;
   margin: auto;
   display: flex;
   flex-direction: column;
+  gap: 20rem;
   align-items: center;
 }

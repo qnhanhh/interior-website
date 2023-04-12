@@ -15,9 +15,7 @@ export const ButtonTypes = {
 export default function Button({ content, type }: buttonType) {
   return (
     <button className={`${styles[type]}`}>
-      <span
-        className={`small-para font-semibold text-white ${jostFont.className}`}
-      >
+      <span className={`small-para font-semibold ${jostFont.className}`}>
         {content}
       </span>
       <svg
