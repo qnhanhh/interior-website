@@ -23,7 +23,7 @@ const userData = [
 
 export default function Testimonial() {
   return (
-    <div className="bg-[var(--primary-3)] w-full flex flex-col items-center rounded-[7rem] p-[8.8rem]">
+    <div className="bg-[var(--primary-3)] w-full flex flex-col items-center rounded-[7rem] p-[8.8rem] mt-[20rem]">
       <h1 className="w-[55rem] mb-[3.8rem] text-center">
         What the People Thinks About Us
       </h1>
@@ -34,6 +34,7 @@ export default function Testimonial() {
               username={item.username}
               location={item.location}
               content={item.content}
+              avatarIndex={index}
               key={index}
             />
           );

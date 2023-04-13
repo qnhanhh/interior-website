@@ -3,7 +3,6 @@ import images from "@/assets/project-images";
 import Item from "./Item";
 
 export default function Project() {
-  const corner = ["tr", "tl", "br", "bl"];
   return (
     <div className="text-center">
       <h1>Follow Our Projects</h1>
@@ -13,7 +12,7 @@ export default function Project() {
       </p>
       <div className="grid grid-cols-2 gap-x-[10rem] gap-y-[5.6rem] mt-[9rem]">
         {images.map((item, index) => {
-          return <Item key={index} src={item} corner={`${corner[index]}`} />;
+          return <Item key={index} src={item} />;
         })}
       </div>
     </div>

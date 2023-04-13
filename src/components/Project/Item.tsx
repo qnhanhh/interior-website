@@ -4,13 +4,12 @@ import rightVector from "@/assets/rightVector.svg";
 
 type itemType = {
   src: StaticImageData;
-  corner: string
 };
 
-export default function Item({ src, corner }: itemType) {
+export default function Item({ src }: itemType) {
   return (
     <div>
-      <Image className={`rounded-${corner}-[8rem]`} src={src} alt="" />
+      <Image className={`rounded-[8rem]`} src={src} alt="" />
       <div className="flex justify-between mt-[2.4rem]">
         <div>
           <h3 className="text-left">Modern kitchen</h3>
