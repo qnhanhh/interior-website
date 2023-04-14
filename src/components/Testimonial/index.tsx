@@ -1,29 +1,9 @@
 import Item from "./Item";
-
-const userData = [
-  {
-    username: "Nattasha Mith",
-    location: "Sydney, USA",
-    content:
-      "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.",
-  },
-  {
-    username: "Raymond Galario",
-    location: "Sydney, Australia",
-    content:
-      "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled it to make a type book.",
-  },
-  {
-    username: "Benny Roll",
-    location: "Sydney, New York",
-    content:
-      "Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled.",
-  },
-];
+import { userData } from "@/data/mockData";
 
 export default function Testimonial() {
   return (
-    <div className="bg-[var(--primary-3)] w-full flex flex-col items-center rounded-[7rem] p-[8.8rem] mt-[20rem]">
+    <div className="bg-[var(--primary-3)] w-full flex flex-col items-center rounded-[7rem] py-[8.8rem] px-10 mt-[20rem]">
       <h1 className="w-[55rem] mb-[3.8rem] text-center">
         What the People Thinks About Us
       </h1>

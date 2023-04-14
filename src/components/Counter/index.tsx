@@ -1,24 +1,6 @@
 import { jostFont } from "@/utils/fonts";
 import styles from "./Counter.module.css";
-
-const counterData = [
-  {
-    number: 12,
-    content: "Years of experience",
-  },
-  {
-    number: 85,
-    content: "Success project",
-  },
-  {
-    number: 15,
-    content: "Active project",
-  },
-  {
-    number: 95,
-    content: "Happy customers",
-  },
-];
+import { counterData } from "@/data/mockData";
 
 export default function Counter() {
   return (

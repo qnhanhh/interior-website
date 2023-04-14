@@ -1,12 +1,9 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { jostFont } from "@/utils/fonts";
+import { projectType } from "@/types";
 import rightVector from "@/assets/rightVector.svg";
 
-type itemType = {
-  src: StaticImageData;
-};
-
-export default function Item({ src }: itemType) {
+export default function Item({ src }: projectType) {
   return (
     <div>
       <Image className={`rounded-[8rem]`} src={src} alt="" />

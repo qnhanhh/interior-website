@@ -1,10 +1,6 @@
 import styles from "./Button.module.css";
 import { jostFont } from "@/utils/fonts";
-
-type buttonType = {
-  content: string;
-  type: string;
-};
+import { buttonType } from "@/types";
 
 export const ButtonTypes = {
   Default: "default",

@@ -2,25 +2,7 @@ import Image from "next/image";
 import logo from "@/assets/logo.svg";
 import icons from "@/assets/footer-icons";
 import { jostFont } from "@/utils/fonts";
-
-const footerData = [
-  {
-    section: "Pages",
-    items: ["About Us", "Our Projects", "Our Team", "Contact Ts", "Services"],
-  },
-  {
-    section: "Services",
-    items: ["Kitchen", "Living Area", "Bathroom", "Dining Hall", "Bedroom"],
-  },
-  {
-    section: "Contact",
-    items: [
-      "55 East Birchwood Ave, Brooklyn, New York 11201",
-      "contact@interno.com",
-      "(123) 456 - 7890",
-    ],
-  },
-];
+import { footerData } from "@/data/mockData";
 
 export default function Footer() {
   return (
@@ -31,7 +13,7 @@ export default function Footer() {
             <Image src={logo} alt="" />
             <h1 className="text-[4rem]">Interno</h1>
           </div>
-          <p className={`large-para ${jostFont.className}`}>
+          <p className={`large-para mt-[1.8rem] mb-12 ${jostFont.className}`}>
             It is a long established fact that a reader will be distracted
             lookings
           </p>
@@ -43,7 +25,7 @@ export default function Footer() {
         </div>
         {footerData.map((item, index) => {
           return (
-            <div key={index}>
+            <div className="shrink-0 last:shrink" key={index}>
               <h3 className="mb-4">{item.section}</h3>
               {item.items.map((item, index) => {
                 return (

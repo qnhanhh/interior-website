@@ -1,12 +1,8 @@
 import { jostFont } from "@/utils/fonts";
 import Button, { ButtonTypes } from "../Button";
+import { workType } from "@/types";
 
-type itemType = {
-  title: string;
-  content: string;
-};
-
-export default function Item({ title, content }: itemType) {
+export default function Item({ title, content }: workType) {
   return (
     <div className="text-center">
       <h3>{title}</h3>

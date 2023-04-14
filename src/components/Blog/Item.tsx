@@ -1,22 +1,18 @@
 import Image from "next/image";
 import { jostFont } from "@/utils/fonts";
+import { blogType } from "@/types";
 import images from "@/assets/blogs";
 import rightVector from "@/assets/rightVector.svg";
 
-type itemType = {
-  info: {
-    imageIndex: number;
-    title: string;
-    date: string;
-    tag: string;
-  };
-};
-
-export default function Item({ info }: itemType) {
+export default function Item({ info }: blogType) {
   const { imageIndex, title, date, tag } = info;
 
   return (
-    <div className={`p-8 text-left rounded-[6.2rem] border-[1px] border-[#E7E7E7] ${imageIndex%2?'bg-[var(--primary-3)]':''}`}>
+    <div
+      className={`p-8 text-left rounded-[6.2rem] border-[1px] border-[#E7E7E7] ${
+        imageIndex % 2 ? "bg-[var(--primary-3)]" : ""
+      }`}
+    >
       <div className="relative">
         <Image
           className="rounded-t-[6.2rem] w-full"
@@ -32,7 +28,11 @@ export default function Item({ info }: itemType) {
       <h3 className="capitalize mt-8 mb-12">{title}</h3>
       <div className="flex justify-between items-center">
         <p className={`text-[1.6rem] ${jostFont.className}`}>{date}</p>
-        <div className={`w-[5rem] h-[5rem] flex items-center justify-center rounded-full ${imageIndex%2?'bg-white':'bg-[var(--primary-3)]'}`}>
+        <div
+          className={`w-[5rem] h-[5rem] flex items-center justify-center rounded-full ${
+            imageIndex % 2 ? "bg-white" : "bg-[var(--primary-3)]"
+          }`}
+        >
           <Image src={rightVector} alt="" />
         </div>
       </div>
